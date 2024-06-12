@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sg90servo_2ec_0',['SG90Servo.c',['../_s_g90_servo_8c.html',1,'']]]
+  ['motorcontrol_2ec_0',['MotorControl.c',['../_motor_control_8c.html',1,'']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CBl-G51: src/lib/SG90Servo/SG90Servo.h Source File</title>
+<title>CBL-G51: src/lib/SG90Servo/SG90Servo.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">CBl-G51
+   <div id="projectname">CBL-G51
    </div>
   </td>
  </tr>
@@ -94,21 +94,25 @@ $(function(){ initResizable(false); });
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SG90SERVO_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SG90SERVO_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define SERVO_PIN       17 </span><span class="comment">/* placeholder, will change later, </span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">                            GPIO pin 17 */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">void</span> <a class="code hl_function" href="_s_g90_servo_8c.html#a3a901cfa8258f39587b6527d86c32110">SG90_init</a>();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">void</span> <a class="code hl_function" href="_s_g90_servo_8c.html#a2f9139b1c768690a5027ae237b82162e">SG90_move_neutral</a>();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">void</span> <a class="code hl_function" href="_s_g90_servo_8c.html#ab29abee23c8630e7eed98452a34a32c4">SG90_move_left</a>();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">void</span> <a class="code hl_function" href="_s_g90_servo_8c.html#a33841d05b8ed9e8615a72e9edc060075">SG90_move_right</a>();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif </span><span class="comment">//SG90SERVO_H</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define SERVO_PIN       19 </span><span class="comment">/* GPIO pin 19 */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#define START_POS       5</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define EJECT_POS       14</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">void</span> <a class="code hl_function" href="_s_g90_servo_8c.html#a3a901cfa8258f39587b6527d86c32110">SG90_init</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> <a class="code hl_function" href="_s_g90_servo_8c.html#a2f9139b1c768690a5027ae237b82162e">SG90_move_neutral</a>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">void</span> <a class="code hl_function" href="_s_g90_servo_8c.html#ab29abee23c8630e7eed98452a34a32c4">SG90_move_left</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> <a class="code hl_function" href="_s_g90_servo_8c.html#a33841d05b8ed9e8615a72e9edc060075">SG90_move_right</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keywordtype">void</span> <a class="code hl_function" href="_s_g90_servo_8c.html#ad6991d0fe8b99a881ef4767f87166023">eject</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">//SG90SERVO_H</span></div>
 <div class="ttc" id="a_s_g90_servo_8c_html_a2f9139b1c768690a5027ae237b82162e"><div class="ttname"><a href="_s_g90_servo_8c.html#a2f9139b1c768690a5027ae237b82162e">SG90_move_neutral</a></div><div class="ttdeci">void SG90_move_neutral()</div><div class="ttdoc">Moving servo to the center position.</div><div class="ttdef"><b>Definition</b> SG90Servo.c:18</div></div>
 <div class="ttc" id="a_s_g90_servo_8c_html_a33841d05b8ed9e8615a72e9edc060075"><div class="ttname"><a href="_s_g90_servo_8c.html#a33841d05b8ed9e8615a72e9edc060075">SG90_move_right</a></div><div class="ttdeci">void SG90_move_right()</div><div class="ttdoc">Move servo to the right position.</div><div class="ttdef"><b>Definition</b> SG90Servo.c:26</div></div>
 <div class="ttc" id="a_s_g90_servo_8c_html_a3a901cfa8258f39587b6527d86c32110"><div class="ttname"><a href="_s_g90_servo_8c.html#a3a901cfa8258f39587b6527d86c32110">SG90_init</a></div><div class="ttdeci">void SG90_init()</div><div class="ttdoc">Initialize.</div><div class="ttdef"><b>Definition</b> SG90Servo.c:14</div></div>
 <div class="ttc" id="a_s_g90_servo_8c_html_ab29abee23c8630e7eed98452a34a32c4"><div class="ttname"><a href="_s_g90_servo_8c.html#ab29abee23c8630e7eed98452a34a32c4">SG90_move_left</a></div><div class="ttdeci">void SG90_move_left()</div><div class="ttdoc">Move servo to the left position.</div><div class="ttdef"><b>Definition</b> SG90Servo.c:22</div></div>
+<div class="ttc" id="a_s_g90_servo_8c_html_ad6991d0fe8b99a881ef4767f87166023"><div class="ttname"><a href="_s_g90_servo_8c.html#ad6991d0fe8b99a881ef4767f87166023">eject</a></div><div class="ttdeci">void eject()</div><div class="ttdoc">Ejects the disc.</div><div class="ttdef"><b>Definition</b> SG90Servo.c:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

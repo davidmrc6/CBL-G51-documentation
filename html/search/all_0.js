@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['cbl_20g51_0',['CBL-G51',['../md__r_e_a_d_m_e.html',1,'']]],
-  ['code_20functionality_1',['Code functionality',['../md__r_e_a_d_m_e.html#autotoc_md6',1,'']]],
-  ['configuration_2',['Pin configuration',['../md__r_e_a_d_m_e.html#autotoc_md5',1,'']]]
+  ['calibrate_0',['calibrate',['../calibrate_8c.html#ad4a7316a51b17d0f691bb3e33b95a5ad',1,'calibrate.c']]],
+  ['calibrate_2ec_1',['calibrate.c',['../calibrate_8c.html',1,'']]]
 ];
